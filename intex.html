@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Brahma Tours & Travels | Premium Kashmir Tour Packages & Taxi Service</title>
+    <meta name="description" content="Experience personalized journeys through the breathtaking valleys of Kashmir with Brahma Tours & Travels. We offer luxury tour packages, houseboat bookings, and reliable taxi services in Srinagar.">
+    <meta name="keywords" content="Kashmir Tour Packages, Kashmir Travel Agency, Srinagar Tour Operator, Kashmir Taxi Service, Gulmarg Tour Packages, Pahalgam Holiday Packages, Houseboat Booking Srinagar, Kashmir Honeymoon Packages">
+    <meta name="author" content="Brahma Tours & Travels">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Brahma Tours & Travels | Luxury Kashmir Escapes">
+    <meta property="og:description" content="Discover the Paradise of Kashmir with expertly crafted tour packages, reliable transportation, and warm local hospitality.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1598091383021-143a41151676?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://brahmatoursandtravels.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brahma Tours & Travels | Premium Kashmir Tour Packages">
+    <meta name="twitter:description" content="Discover the Paradise of Kashmir with expertly crafted tour packages and reliable taxi services.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1598091383021-143a41151676?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Brahma Tours & Travels",
+      "image": "https://images.unsplash.com/photo-1598091383021-143a41151676?auto=format&fit=crop&w=800&q=80",
+      "@id": "",
+      "url": "https://brahmatoursandtravels.com",
+      "telephone": "+91 8825095933",
+      "email": "brahmatourandtravels@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Durga Nag, Near Paras Hospital, Dalgate",
+        "addressLocality": "Srinagar",
+        "addressRegion": "Jammu & Kashmir",
+        "postalCode": "190001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0837,
+        "longitude": 74.7973
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "500"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D3B66',
+                        secondary: '#ffffff',
+                        accent: '#D4AF37',
+                        success: '#2E8B57',
+                        background: '#F8F9FA'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles & Animations */
+        body { font-family: 'Inter', sans-serif; background-color: #F8F9FA; overflow-x: hidden; }
+        h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Poppins', sans-serif; }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(13, 59, 102, 0.4), rgba(13, 59, 102, 0.7));
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Smooth Image Hover */
+        .img-hover-zoom { overflow: hidden; }
+        .img-hover-zoom img { transition: transform 0.7s ease; }
+        .img-hover-zoom:hover img { transform: scale(1.08); }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #F8F9FA; }
+        ::-webkit-scrollbar-thumb { background: #0D3B66; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+
+        /* Stats Counter Animation */
+        .counter-value { font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-accent selection:text-white relative">
+
+    <!-- Top Promo Banner -->
+    <div class="bg-success text-white text-sm font-medium py-2 px-4 text-center">
+        🌸 Seasonal Special: Book your Tulip Festival Tour now! Limited slots available. <a href="#contact" class="underline hover:text-accent transition-colors">Book Now</a>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 mt-9 text-white">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
+                    B
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-bold text-xl leading-tight tracking-wide">Brahma Tours</span>
+                    <span class="text-xs uppercase tracking-widest text-accent font-semibold">& Travels</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm">
+                <a href="#" class="hover:text-accent transition-colors">Home</a>
+                <a href="#about" class="hover:text-accent transition-colors">About</a>
+                <a href="#packages" class="hover:text-accent transition-colors">Packages</a>
+                <a href="#destinations" class="hover:text-accent transition-colors">Destinations</a>
+                <a href="#taxi" class="hover:text-accent transition-colors">Taxi Services</a>
+                <a href="#reviews" class="hover:text-accent transition-colors">Reviews</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="tel:+918825095933" class="flex items-center gap-2 font-semibold hover:text-accent transition-colors">
+                    <i class="fas fa-phone-alt"></i> +91 8825095933
+                </a>
+                <a href="#contact" class="bg-accent text-white px-6 py-2.5 rounded-full font-semibold shadow-lg hover:bg-yellow-500 transition-all transform hover:-translate-y-0.5">
+                    Book Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="lg:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white text-primary shadow-xl absolute w-full left-0 top-full flex flex-col p-6 gap-4 font-medium border-t border-gray-100">
+            <a href="#" class="hover:text-accent mobile-link">Home</a>
+            <a href="#about" class="hover:text-accent mobile-link">About</a>
+            <a href="#packages" class="hover:text-accent mobile-link">Packages</a>
+            <a href="#destinations" class="hover:text-accent mobile-link">Destinations</a>
+            <a href="#taxi" class="hover:text-accent mobile-link">Taxi Services</a>
+            <a href="#contact" class="hover:text-accent mobile-link">Contact</a>
+            <a href="#contact" class="bg-accent text-white px-6 py-3 rounded-full text-center mt-2 font-bold">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1598091383021-143a41151676?auto=format&fit=crop&w=1920&q=80" alt="Breathtaking Kashmir Valley" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 container mx-auto px-6 text-center text-white mt-12">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-sm font-medium mb-6 animate-pulse">
+                <i class="fas fa-star text-accent"></i> 5.0 Rated Premium Travel Agency in Srinagar
+            </div>
+            <h1 class="font-heading text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
+                Discover the Paradise <br class="hidden md:block" />
+                <span class="text-accent italic">of Kashmir</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light max-w-2xl mx-auto mb-10 drop-shadow-md leading-relaxed">
+                Experience personalized journeys through the breathtaking valleys of Kashmir with expertly crafted tour packages, reliable transportation, and warm local hospitality.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:bg-yellow-500 transition-all hover:scale-105">
+                    Book Your Tour
+                </a>
+                <a href="#packages" class="bg-white/10 backdrop-blur-md border border-white/50 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all">
+                    Explore Packages
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Stats Banner -->
+        <div class="absolute bottom-0 left-0 w-full bg-primary/80 backdrop-blur-md border-t border-white/10 z-10">
+            <div class="container mx-auto px-6 py-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-x divide-white/20">
+                    <div class="px-2">
+                        <div class="flex items-center justify-center gap-2 text-accent font-bold text-2xl">
+                            <i class="fas fa-calendar-check text-lg"></i> <span class="counter" data-target="3">0</span>+
+                        </div>
+                        <div class="text-white/80 text-xs uppercase tracking-wider mt-1">Years Experience</div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center justify-center gap-2 text-accent font-bold text-2xl">
+                            <i class="fas fa-smile text-lg"></i> <span class="counter" data-target="500">0</span>+
+                        </div>
+                        <div class="text-white/80 text-xs uppercase tracking-wider mt-1">Happy Travelers</div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center justify-center gap-2 text-accent font-bold text-2xl">
+                            <i class="fas fa-map-marked-alt text-lg"></i> <span class="counter" data-target="100">0</span>+
+                        </div>
+                        <div class="text-white/80 text-xs uppercase tracking-wider mt-1">Tours Organized</div>
+                    </div>
+                    <div class="px-2">
+                        <div class="flex items-center justify-center gap-2 text-accent font-bold text-2xl">
+                            <i class="fas fa-headset text-lg"></i> 24/7
+                        </div>
+                        <div class="text-white/80 text-xs uppercase tracking-wider mt-1">Local Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search / Filter Section -->
+    <section class="relative -mt-8 z-20 container mx-auto px-6 hidden md:block">
+        <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 flex items-center justify-between gap-4">
+            <div class="flex-1 flex items-center gap-3 border-r border-gray-200 pr-4">
+                <i class="fas fa-location-dot text-primary text-xl"></i>
+                <div class="w-full">
+                    <p class="text-xs text-gray-500 font-semibold uppercase">Destination</p>
+                    <select class="w-full bg-transparent font-medium text-gray-800 focus:outline-none">
+                        <option>Where are you going?</option>
+                        <option>Srinagar</option>
+                        <option>Gulmarg</option>
+                        <option>Pahalgam</option>
+                        <option>Sonamarg</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex-1 flex items-center gap-3 border-r border-gray-200 px-4">
+                <i class="fas fa-th-large text-primary text-xl"></i>
+                <div class="w-full">
+                    <p class="text-xs text-gray-500 font-semibold uppercase">Tour Type</p>
+                    <select class="w-full bg-transparent font-medium text-gray-800 focus:outline-none">
+                        <option>All Packages</option>
+                        <option>Honeymoon</option>
+                        <option>Family</option>
+                        <option>Adventure</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex-1 flex items-center gap-3 px-4">
+                <i class="fas fa-calendar-alt text-primary text-xl"></i>
+                <div class="w-full">
+                    <p class="text-xs text-gray-500 font-semibold uppercase">Date</p>
+                    <input type="date" class="w-full bg-transparent font-medium text-gray-800 focus:outline-none text-sm">
+                </div>
+            </div>
+            <button class="bg-primary text-white p-4 rounded-xl hover:bg-blue-900 transition-colors shadow-md">
+                <i class="fas fa-search text-xl"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2 relative reveal">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl"></div>
+                    <img src="https://images.unsplash.com/photo-1629851890353-8d6d81414e86?auto=format&fit=crop&w=800&q=80" alt="Houseboat in Dal Lake" class="rounded-3xl shadow-2xl relative z-10 w-full object-cover h-[500px]">
+                    <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl z-20 max-w-[200px] border border-gray-100">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
+                                <i class="fas fa-shield-alt text-xl"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-gray-800">Trusted Local Experts</h4>
+                        </div>
+                        <p class="text-xs text-gray-500">Based in Srinagar, J&K. Guaranteed authentic experiences.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 reveal delay-200">
+                    <h5 class="text-accent font-bold tracking-widest uppercase text-sm mb-3">About Brahma Tours & Travels</h5>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">Crafting Unforgettable Memories in Paradise</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                        Based in the heart of Srinagar, we are dedicated to showcasing the breathtaking beauty and rich culture of Kashmir. From luxurious houseboats on Dal Lake to the snow-capped peaks of Gulmarg, we curate personalized journeys just for you.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-success mt-1 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Customized Itineraries</h4>
+                                <p class="text-sm text-gray-500">Tailored to your budget and preferences.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-success mt-1 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Premium Transport</h4>
+                                <p class="text-sm text-gray-500">Safe, clean, and comfortable fleet.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-success mt-1 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Luxury Stays</h4>
+                                <p class="text-sm text-gray-500">Top-rated hotels & romantic houseboats.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-success mt-1 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">24/7 Assistance</h4>
+                                <p class="text-sm text-gray-500">We are always a call away.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="inline-block bg-primary text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-900 transition-colors">
+                        Know More About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tour Packages -->
+    <section id="packages" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h5 class="text-accent font-bold tracking-widest uppercase text-sm mb-3">Popular Journeys</h5>
+                <h2 class="font-heading text-4xl font-bold text-primary mb-4">Featured Tour Packages</h2>
+                <p class="text-gray-500">Carefully curated experiences ranging from romantic honeymoon escapes to thrilling family adventures in the valleys of Kashmir.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Package Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group hover:-translate-y-2 transition-all duration-300 reveal delay-100">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1571536802807-3cabee18b762?auto=format&fit=crop&w=600&q=80" alt="Honeymoon in Kashmir" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full">
+                            Best Seller
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <p class="text-white font-medium flex items-center gap-2">
+                                <i class="far fa-clock"></i> 5 Days / 4 Nights
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors">Romantic Kashmir Honeymoon</h3>
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">Experience the magic of love amidst Dal Lake houseboats, snowy Gulmarg, and romantic Pahalgam valleys.</p>
+                        <div class="flex items-center gap-3 text-xs text-gray-600 mb-6 border-y border-gray-100 py-3">
+                            <span class="flex items-center gap-1"><i class="fas fa-bed text-accent"></i> Hotel</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-car text-accent"></i> Transport</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-camera text-accent"></i> Sightseeing</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Starting from</p>
+                                <p class="font-bold text-primary text-xl">₹15,999<span class="text-sm text-gray-500 font-normal">/pp</span></p>
+                            </div>
+                            <a href="#contact" class="bg-accent text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-yellow-500 transition-colors shadow-md">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group hover:-translate-y-2 transition-all duration-300 reveal delay-200">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=600&q=80" alt="Family Tour Kashmir" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <p class="text-white font-medium flex items-center gap-2">
+                                <i class="far fa-clock"></i> 6 Days / 5 Nights
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors">Premium Family Vacation</h3>
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">Create unforgettable memories with your family covering Srinagar, Gulmarg, Sonamarg, and Pahalgam.</p>
+                        <div class="flex items-center gap-3 text-xs text-gray-600 mb-6 border-y border-gray-100 py-3">
+                            <span class="flex items-center gap-1"><i class="fas fa-bed text-accent"></i> Hotel</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-utensils text-accent"></i> Meals</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-car text-accent"></i> Transport</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Starting from</p>
+                                <p class="font-bold text-primary text-xl">₹18,500<span class="text-sm text-gray-500 font-normal">/pp</span></p>
+                            </div>
+                            <a href="#contact" class="bg-accent text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-yellow-500 transition-colors shadow-md">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group hover:-translate-y-2 transition-all duration-300 reveal delay-300">
+                    <div class="relative h-64 img-hover-zoom">
+                        <img src="https://images.unsplash.com/photo-1615560662283-bc1a316c1ec0?auto=format&fit=crop&w=600&q=80" alt="Winter Wonderland" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Adventure
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <p class="text-white font-medium flex items-center gap-2">
+                                <i class="far fa-clock"></i> 4 Days / 3 Nights
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-heading text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors">Winter Wonderland Tour</h3>
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">Experience the thrill of skiing, Gondola rides in Gulmarg, and stunning snowscapes.</p>
+                        <div class="flex items-center gap-3 text-xs text-gray-600 mb-6 border-y border-gray-100 py-3">
+                            <span class="flex items-center gap-1"><i class="fas fa-snowflake text-accent"></i> Snow Activities</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-car text-accent"></i> SUV</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-xs text-gray-500">Starting from</p>
+                                <p class="font-bold text-primary text-xl">₹12,000<span class="text-sm text-gray-500 font-normal">/pp</span></p>
+                            </div>
+                            <a href="#contact" class="bg-accent text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-yellow-500 transition-colors shadow-md">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12 reveal">
+                <a href="#contact" class="inline-flex items-center gap-2 font-semibold text-primary hover:text-accent transition-colors">
+                    View All Packages <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations Grid -->
+    <section id="destinations" class="py-24 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12 reveal">
+                <div class="max-w-2xl">
+                    <h5 class="text-accent font-bold tracking-widest uppercase text-sm mb-3">Explore Kashmir</h5>
+                    <h2 class="font-heading text-4xl font-bold text-primary mb-4">Breathtaking Destinations</h2>
+                    <p class="text-gray-500">From majestic mountains to serene lakes, discover the locations that make Kashmir Heaven on Earth.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 h-[600px] reveal">
+                <!-- Large Feature -->
+                <div class="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1598091383021-143a41151676?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <h3 class="font-heading text-3xl font-bold text-white mb-2">Srinagar & Dal Lake</h3>
+                        <p class="text-white/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">Experience the heart of Kashmir with Shikara rides, Mughal Gardens, and vibrant culture.</p>
+                        <span class="inline-block border border-white/50 text-white px-4 py-1.5 rounded-full text-xs font-semibold backdrop-blur-sm group-hover:bg-white group-hover:text-primary transition-colors">Explore</span>
+                    </div>
+                </div>
+
+                <!-- Small Box 1 -->
+                <div class="relative rounded-3xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1629851890353-8d6d81414e86?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Gulmarg</h3>
+                        <span class="text-accent text-xs font-semibold">Meadow of Flowers</span>
+                    </div>
+                </div>
+
+                <!-- Small Box 2 -->
+                <div class="relative rounded-3xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Pahalgam</h3>
+                        <span class="text-accent text-xs font-semibold">Valley of Shepherds</span>
+                    </div>
+                </div>
+
+                <!-- Small Box 3 -->
+                <div class="relative rounded-3xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1615560662283-bc1a316c1ec0?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Sonamarg</h3>
+                        <span class="text-accent text-xs font-semibold">Meadow of Gold</span>
+                    </div>
+                </div>
+
+                <!-- Small Box 4 -->
+                <div class="relative rounded-3xl overflow-hidden group cursor-pointer shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1571536802807-3cabee18b762?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">Doodhpathri</h3>
+                        <span class="text-accent text-xs font-semibold">Valley of Milk</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Taxi & Transport Services -->
+    <section id="taxi" class="py-24 bg-primary text-white relative overflow-hidden">
+        <!-- Abstract shape -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-success/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/3 reveal">
+                    <h5 class="text-accent font-bold tracking-widest uppercase text-sm mb-3">Premium Fleet</h5>
+                    <h2 class="font-heading text-4xl font-bold mb-6">Reliable Taxi & Car Rental</h2>
+                    <p class="text-white/80 mb-8 leading-relaxed">
+                        Travel in comfort and safety across Kashmir with our well-maintained fleet and professional local drivers. We offer airport transfers, local sightseeing, and outstation trips at the best rates.
+                    </p>
+                    <ul class="space-y-4 mb-8 text-white/90">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Airport Pickup & Drop</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Corporate Transport</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Clean, AC Vehicles</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Experienced Drivers</li>
+                    </ul>
+                    <a href="#contact" class="inline-block bg-accent text-white px-8 py-3.5 rounded-full font-bold shadow-lg hover:bg-yellow-500 transition-colors">
+                        Book a Cab
+                    </a>
+                </div>
+                
+                <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 reveal delay-200">
+                    <!-- Fleet Card 1 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-3xl hover:bg-white/15 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-heading text-2xl font-bold text-white">Toyota Innova</h3>
+                                <p class="text-accent text-sm">SUV • Premium Comfort</p>
+                            </div>
+                            <i class="fas fa-car-side text-3xl text-white/50"></i>
+                        </div>
+                        <div class="flex gap-4 text-sm text-white/70 mb-6">
+                            <span class="flex items-center gap-1"><i class="fas fa-users"></i> 6+1 Seats</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-snowflake"></i> AC</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-suitcase"></i> 4 Bags</span>
+                        </div>
+                    </div>
+                    <!-- Fleet Card 2 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-3xl hover:bg-white/15 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-heading text-2xl font-bold text-white">Sedan (Etios/Dzire)</h3>
+                                <p class="text-accent text-sm">Comfort • Budget Friendly</p>
+                            </div>
+                            <i class="fas fa-car text-3xl text-white/50"></i>
+                        </div>
+                        <div class="flex gap-4 text-sm text-white/70 mb-6">
+                            <span class="flex items-center gap-1"><i class="fas fa-users"></i> 4+1 Seats</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-snowflake"></i> AC</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-suitcase"></i> 2 Bags</span>
+                        </div>
+                    </div>
+                    <!-- Fleet Card 3 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-3xl hover:bg-white/15 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-heading text-2xl font-bold text-white">Tempo Traveller</h3>
+                                <p class="text-accent text-sm">Group Tours • Spacious</p>
+                            </div>
+                            <i class="fas fa-bus-alt text-3xl text-white/50"></i>
+                        </div>
+                        <div class="flex gap-4 text-sm text-white/70 mb-6">
+                            <span class="flex items-center gap-1"><i class="fas fa-users"></i> 12 to 17 Seats</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-snowflake"></i> AC</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-suitcase"></i> Ample</span>
+                        </div>
+                    </div>
+                    <!-- Fleet Card 4 -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-3xl hover:bg-white/15 transition-colors">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="font-heading text-2xl font-bold text-white">Luxury Vehicles</h3>
+                                <p class="text-accent text-sm">VIP • Special Occasions</p>
+                            </div>
+                            <i class="fas fa-gem text-3xl text-white/50"></i>
+                        </div>
+                        <div class="flex gap-4 text-sm text-white/70 mb-6">
+                            <span class="flex items-center gap-1"><i class="fas fa-star"></i> Top Tier</span>
+                            <span class="flex items-center gap-1"><i class="fas fa-snowflake"></i> AC/Heater</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h5 class="text-accent font-bold tracking-widest uppercase text-sm mb-3">Testimonials</h5>
+                <h2 class="font-heading text-4xl font-bold text-primary mb-4">Trusted by Happy Travelers</h2>
+                <div class="flex justify-center items-center gap-1 text-accent text-xl mb-4">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span class="text-gray-800 font-bold ml-2 text-lg">5.0 (500+ Reviews)</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-100">
+                <!-- Review 1 -->
+                <div class="bg-background p-8 rounded-3xl relative border border-gray-100">
+                    <i class="fas fa-quote-left text-4xl text-gray-200 absolute top-6 right-6"></i>
+                    <div class="flex gap-1 text-accent text-sm mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Our Kashmir trip was perfectly organized by Brahma Tours. The houseboat stay in Dal Lake was magical, and the driver was extremely professional. Highly recommended!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex justify-center items-center font-bold font-heading">
+                            RM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Rahul Mukherjee</h4>
+                            <p class="text-xs text-gray-500">Mumbai, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-background p-8 rounded-3xl relative border border-gray-100">
+                    <i class="fas fa-quote-left text-4xl text-gray-200 absolute top-6 right-6"></i>
+                    <div class="flex gap-1 text-accent text-sm mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"We booked a 6-day family package. From airport pickup to drop-off, everything was flawless. The hotels chosen for us in Pahalgam and Gulmarg were top-notch."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex justify-center items-center font-bold font-heading">
+                            AS
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Anita Sharma</h4>
+                            <p class="text-xs text-gray-500">Delhi, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-background p-8 rounded-3xl relative border border-gray-100">
+                    <i class="fas fa-quote-left text-4xl text-gray-200 absolute top-6 right-6"></i>
+                    <div class="flex gap-1 text-accent text-sm mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Outstanding service! We just needed a reliable taxi for a week. The Innova provided was very clean, and our driver guided us like a true local expert. Safe and comfortable."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary text-white flex justify-center items-center font-bold font-heading">
+                            JP
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">John & Priya</h4>
+                            <p class="text-xs text-gray-500">Bangalore, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Contact Section -->
+    <section id="contact" class="py-24 bg-background relative">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                <!-- Left: Info -->
+                <div class="lg:w-2/5 bg-primary p-12 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-2xl transform translate-x-1/2 -translate-y-1/2"></div>
+                    
+                    <h3 class="font-heading text-3xl font-bold mb-2 relative z-10">Plan Your Trip</h3>
+                    <p class="text-white/80 mb-10 relative z-10">Fill out the form and our travel experts will get back to you with a personalized itinerary within 24 hours.</p>
+                    
+                    <div class="space-y-6 relative z-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-map-marker-alt text-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Office Address</h5>
+                                <p class="text-white/70 text-sm mt-1">Durga Nag, Near Paras Hospital,<br>Dalgate, Srinagar, J&K – 190001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-phone-alt text-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Call Us 24/7</h5>
+                                <p class="text-white/70 text-sm mt-1">+91 8825095933</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-envelope text-accent text-xl"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Email Us</h5>
+                                <p class="text-white/70 text-sm mt-1 break-all">brahmatourandtravels@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="lg:w-3/5 p-12">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 mb-6">Send an Inquiry</h3>
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your inquiry! We will contact you soon.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-600 mb-2">Full Name</label>
+                                <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-600 mb-2">Phone Number</label>
+                                <input type="tel" required class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-600 mb-2">Travel Date</label>
+                                <input type="date" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-600 mb-2">Number of Travelers</label>
+                                <input type="number" min="1" placeholder="Adults & Children" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold text-gray-600 mb-2">Service Required</label>
+                            <select class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+                                <option>Complete Tour Package</option>
+                                <option>Honeymoon Package</option>
+                                <option>Taxi Service / Car Rental</option>
+                                <option>Hotel/Houseboat Booking</option>
+                            </select>
+                        </div>
+                        <div class="mb-8">
+                            <label class="block text-sm font-semibold text-gray-600 mb-2">Message or Special Requests</label>
+                            <textarea rows="4" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder-gray-400" placeholder="Tell us about your budget, preferred destinations, etc."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent text-white py-4 rounded-xl font-bold text-lg hover:bg-yellow-500 transition-colors shadow-lg">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#082440] text-white/80 pt-20 pb-10 border-t-4 border-accent">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <!-- Brand -->
+                <div>
+                    <a href="#" class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white font-bold text-xl shadow-lg">B</div>
+                        <div class="flex flex-col">
+                            <span class="font-heading font-bold text-xl leading-tight tracking-wide text-white">Brahma Tours</span>
+                            <span class="text-xs uppercase tracking-widest text-accent font-semibold">& Travels</span>
+                        </div>
+                    </a>
+                    <p class="text-sm mb-6 leading-relaxed">Your trusted local travel partner in Srinagar, Jammu & Kashmir. We specialize in providing the most safe, comfortable, and memorable Kashmir journeys.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918825095933" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#about" class="hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="#packages" class="hover:text-accent transition-colors">Kashmir Tour Packages</a></li>
+                        <li><a href="#taxi" class="hover:text-accent transition-colors">Taxi & Cab Services</a></li>
+                        <li><a href="#destinations" class="hover:text-accent transition-colors">Destinations in Kashmir</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Houseboat Booking</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-lg mb-6">Legal</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-accent transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Cancellation Policy</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Badges -->
+                <div>
+                    <h4 class="font-heading font-bold text-white text-lg mb-6">Trust & Safety</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-lg border border-white/10">
+                            <i class="fas fa-shield-alt text-2xl text-success"></i>
+                            <div>
+                                <p class="font-bold text-white text-sm">Verified Local Operator</p>
+                                <p class="text-xs">Based in Srinagar</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-lg border border-white/10">
+                            <i class="fas fa-headset text-2xl text-accent"></i>
+                            <div>
+                                <p class="font-bold text-white text-sm">24/7 Support</p>
+                                <p class="text-xs">Always here to help</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/50">
+                <p>&copy; 2026 Brahma Tours & Travels. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for Premium Experiences</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <!-- WhatsApp -->
+    <a href="https://wa.me/918825095933" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl shadow-[0_4px_15px_rgba(34,197,94,0.4)] hover:scale-110 transition-transform z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Mobile Sticky Book Now (shows only on mobile when scrolling past hero) -->
+    <div class="fixed bottom-0 left-0 w-full p-4 bg-white/90 backdrop-blur border-t border-gray-200 z-40 lg:hidden transform translate-y-full transition-transform duration-300 shadow-[0_-5px_15px_rgba(0,0,0,0.05)]" id="mobileStickyCTA">
+        <div class="flex gap-2">
+            <a href="tel:+918825095933" class="flex-1 bg-primary text-white py-3 rounded-xl font-bold text-center flex justify-center items-center gap-2"><i class="fas fa-phone-alt"></i> Call</a>
+            <a href="#contact" class="flex-1 bg-accent text-white py-3 rounded-xl font-bold text-center">Book Now</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Transparent to Solid Navbar on Scroll
+        const navbar = document.getElementById('navbar');
+        const mobileStickyCTA = document.getElementById('mobileStickyCTA');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-nav', 'text-primary');
+                navbar.classList.remove('text-white', 'mt-9');
+                // Adjust logo colors
+                const logoTexts = navbar.querySelectorAll('span');
+                logoTexts[0].classList.remove('text-white');
+                logoTexts[0].classList.add('text-primary');
+            } else {
+                navbar.classList.remove('glass-nav', 'text-primary');
+                navbar.classList.add('text-white', 'mt-9');
+                // Revert logo colors
+                const logoTexts = navbar.querySelectorAll('span');
+                logoTexts[0].classList.remove('text-primary');
+                logoTexts[0].classList.add('text-white');
+            }
+
+            // Mobile CTA pop up
+            if (window.scrollY > 500) {
+                mobileStickyCTA.classList.remove('translate-y-full');
+            } else {
+                mobileStickyCTA.classList.add('translate-y-full');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Scroll Reveal Animation (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+
+        const revealObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Animated Counters
+        const counters = document.querySelectorAll('.counter');
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    const target = entry.target;
+                    const finalValue = parseInt(target.getAttribute('data-target'));
+                    const duration = 2000; // ms
+                    const stepTime = Math.abs(Math.floor(duration / finalValue));
+                    let current = 0;
+                    
+                    const timer = setInterval(() => {
+                        current += Math.ceil(finalValue / 50);
+                        if(current >= finalValue) {
+                            target.innerText = finalValue;
+                            clearInterval(timer);
+                        } else {
+                            target.innerText = current;
+                        }
+                    }, stepTime);
+                    
+                    observer.unobserve(target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        counters.forEach(counter => counterObserver.observe(counter));
+    </script>
+</body>
+</html>
